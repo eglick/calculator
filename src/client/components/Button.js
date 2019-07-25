@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import "./Button.css";
 
 class Button extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
   handleClick() {
     this.props.clickHandler(this.props.name);
   };
